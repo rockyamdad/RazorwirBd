@@ -11,6 +11,7 @@ class ProductController extends Controller {
 		return view('Backend.dashboard');
 	}
 	public function add(){
+
 		return view('Products.add');
 	}
 	public function store(){
