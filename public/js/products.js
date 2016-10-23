@@ -1,9 +1,4 @@
-jQuery(document).ready(function() {
 
-    // Put page-specific javascript here
-  /*  $('#branch_table').DataTable({
-        "bPaginate": false
-    });*/
     var form = $('#product_form');
     var error1 = $('.alert-danger', form);
     var success1 = $('.alert-success', form);
@@ -19,13 +14,18 @@ jQuery(document).ready(function() {
             },
             brand: {
                 required: true
+            },
+            origin_name: {
+                required: true
+            },
+            price:{
+                required:true
             }
         },
 
         invalidHandler: function (event, validator) { //display error alert on form submit
             success1.hide();
             error1.show();
-            App.scrollTo(error1, -200);
         },
 
         highlight: function (element) { // hightlight error inputs
@@ -51,4 +51,3 @@ jQuery(document).ready(function() {
 
 
 
-});

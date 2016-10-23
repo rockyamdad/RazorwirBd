@@ -7,7 +7,7 @@
     <!-- END STYLE CUSTOMIZER -->
     <!-- BEGIN PAGE HEADER-->
     <h3 class="page-title">
-        Dashboard <small>reports & statistics</small>
+        Dashboard
     </h3>
     <div class="page-bar">
         <ul class="page-breadcrumb">
@@ -28,6 +28,7 @@
             </div>
         </div>
 
-         <h1>Welcome RazorWir Bd</h1>
+
     </div>
+    <h1>Welcome RazorWir Bd</h1>
 @stop

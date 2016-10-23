@@ -10,5 +10,6 @@ Route::get('dashboard', 'ProductController@index');
 Route::get('add', 'ProductController@add');
 Route::get('list', 'ProductController@products');
 Route::post('product-save', 'ProductController@store');
-
+Route::get('edit/{id}', 'ProductController@edit');
+Route::post('edit/{id}', 'ProductController@postUpdate');
 

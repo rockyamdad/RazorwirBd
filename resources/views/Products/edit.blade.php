@@ -10,11 +10,11 @@
         <ul class="page-breadcrumb breadcrumb">
             <li>
                 <i class="fa fa-home"></i>
-                <a href="{{URL::to('dashboard')}}">Home</a>
+                <a href="{{URL::to('list')}}">Home</a>
                 <i class="fa fa-angle-right"></i>
             </li>
 
-            <li><a href="{{URL::to('add')}}">Add Product</a></li>
+            <li>Edit Product</li>
         </ul>
         <!-- END PAGE TITLE & BREADCRUMB-->
     </div>
@@ -24,14 +24,15 @@
     <!-- BEGIN VALIDATION STATES-->
     <div class="portlet box purple">
         <div class="portlet-title">
-            <div class="caption"><i class="fa fa-reorder"></i>Add Product</div>
+            <div class="caption"><i class="fa fa-reorder"></i>Edit Product</div>
             <div class="actions">
-                <a class="btn dark" href="{{ URL::to('list') }}">Product List</a>
+                <a class="btn" href="{{ URL::to('list') }}">Product List</a>
             </div>
         </div>
         <div class="portlet-body form">
             <!-- BEGIN FORM-->
-            {!!Form::open(array('url' => 'product-save/', 'method' => 'post', 'class'=>'form-horizontal', 'id'=>'product_form','files' => true))!!}
+            {!!Form::model($product,array('action' => array('ProductController@postUpdate', $product->id), 'method' => 'POST', 'class'=>'form-horizontal', 'id'=>'branch_form'))!!}
+
             <div class="form-body">
                 <div class="alert alert-danger display-hide">
                     <button data-close="alert" class="close"></button>
@@ -105,22 +106,22 @@
                 </div>
 
 
-            <div class="form-actions fluid">
-                <div class="col-md-offset-3 col-md-9">
-                    {!!Form::button('Save',array('type' => 'submit','class' => 'btn blue','id' => 'save'))!!}
-                    {!!Form::button('Cancel',array('type'=>'reset', 'class' => 'btn default','id' => 'cancel'))!!}
+                <div class="form-actions fluid">
+                    <div class="col-md-offset-3 col-md-9">
+                        {!!Form::button('Save',array('type' => 'submit','class' => 'btn blue','id' => 'save'))!!}
+                        {!!Form::button('Cancel',array('type'=>'reset', 'class' => 'btn default','id' => 'cancel'))!!}
 
+                    </div>
                 </div>
+                {!!Form::close()!!}
+                <!-- END FORM-->
             </div>
-            {!!Form::close()!!}
-            <!-- END FORM-->
         </div>
+        <!-- END VALIDATION STATES-->
     </div>
-    <!-- END VALIDATION STATES-->
-</div>
-@stop
-@section('javascript')
+    @stop
+    @section('javascript')
     {!! HTML::script('js/products.js') !!}
-@stop
+    @stop
 
 

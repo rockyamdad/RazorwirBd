@@ -85,12 +85,12 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                     </a>
                     <ul class="dropdown-menu dropdown-menu-default">
                         <li>
-                            <a href="extra_profile.html">
+                            <a href="#">
                                 <i class="icon-user"></i> My Profile </a>
                         </li>
 
                         <li>
-                            <a href="login.html">
+                            <a href="{{ URL::to('logout/') }}">
                                 <i class="icon-key"></i> Log Out </a>
                         </li>
                     </ul>
@@ -196,7 +196,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
     <div class="page-footer-inner">
-        2014 &copy; Metronic by keenthemes.
+        2016 &copy; razorwirbd.com.
     </div>
     <div class="scroll-to-top">
         <i class="icon-arrow-up"></i>
@@ -251,20 +251,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
     });
 
 </script>
-<!-- END JAVASCRIPTS -->
-<script type="text/javascript">  var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-37564768-1']);
-    _gaq.push(['_setDomainName', 'keenthemes.com']);
-    _gaq.push(['_setAllowLinker', true]);
-    _gaq.push(['_trackPageview']);
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();</script>
+
 @yield('javascript')
 </body>
 <!-- END BODY -->
