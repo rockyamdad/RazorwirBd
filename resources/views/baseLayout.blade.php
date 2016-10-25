@@ -119,7 +119,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                         Home
                     </a>
                 </li>
-                <li><a href="shop-item.html">Products</a></li>
+                <li><a href="#">Products</a></li>
                 <li class="dropdown dropdown100 nav-catalogue">
                     <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
                         New
@@ -175,7 +175,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                     </ul>
                 </li>
                 <li><a href="{{ URL::to('about-us') }}" >About Us</a></li>
-                <li><a href="onepage-index.html" target="_blank">Contact Us</a></li>
+                <li><a href="#" target="_blank">Contact Us</a></li>
             </ul>
         </div>
         <!-- END NAVIGATION -->
@@ -188,18 +188,15 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <div class="brands">
     <div class="container">
         <div class="owl-carousel owl-carousel6-brands">
-            <a href="#"><img src="assets/frontend/pages/img/brands/canon.jpg" alt="canon" title="canon"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/esprit.jpg" alt="esprit" title="esprit"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/gap.jpg" alt="gap" title="gap"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/next.jpg" alt="next" title="next"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/puma.jpg" alt="puma" title="puma"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/zara.jpg" alt="zara" title="zara"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/canon.jpg" alt="canon" title="canon"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/esprit.jpg" alt="esprit" title="esprit"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/gap.jpg" alt="gap" title="gap"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/next.jpg" alt="next" title="next"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/puma.jpg" alt="puma" title="puma"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/zara.jpg" alt="zara" title="zara"></a>
+            <a href="#"><img src="assets/frontend/pages/img/brands/aiub.JPG" style="width: 90px;height: 90px;" alt="esprit" title="AIUB"></a>
+            <a href="#"><img src="assets/frontend/pages/img/brands/AMAN-Group-1.png" style="width: 90px;height: 90px;" alt="esprit" title="Aman Group"></a>
+            <a href="#"><img src="assets/frontend/pages/img/brands/army.png" style="width: 90px;height: 90px;" alt="gap" title="bangladesh Army"></a>
+            <a href="#"><img src="assets/frontend/pages/img/brands/gulsan_club.png" style="width: 90px;height: 90px;" alt="next" title="Gulsan Club"></a>
+            <a href="#"><img src="assets/frontend/pages/img/brands/logo15.png" style="width: 90px;height: 90px;" alt="puma" title="STS Group"></a>
+            <a href="#"><img src="assets/frontend/pages/img/brands/turky.jpg" style="width: 90px;height: 90px;" alt="zara" title="Turky Embassy"></a>
+            <a href="#"><img src="assets/frontend/pages/img/brands/us-embassy.jpg" style="width: 90px;height: 90px;" alt="canon" title="US-Embassy"></a>
+            <a href="#"><img src="assets/frontend/pages/img/brands/bcb.png" style="width: 90px;height: 90px;" alt="esprit" title="BCB"></a>
+            <a href="#"><img src="assets/frontend/pages/img/brands/meghna.png" style="width: 90px;height: 90px;" alt="gap" title="Meghna Group"></a>
         </div>
     </div>
 </div>
@@ -237,12 +234,13 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
             <div class="col-md-3 col-sm-6 pre-footer-col">
                 <h2>Our Contacts</h2>
                 <address class="margin-bottom-40">
-                    35, Lorem Lis Street, Park Ave<br>
-                    California, US<br>
-                    Phone: 300 323 3456<br>
-                    Fax: 300 323 1456<br>
-                    Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>
-                    Skype: <a href="skype:metronic">metronic</a>
+                    Ferdous Hossain<br>
+                    M/S Sharif Enterprise<br>
+                    22 Nawab yousuf Market Nayabazar<br>
+                    Dhaka<br>
+                    Phone: 01711524335<br>
+                    Email: <a href="mailto:info@metronic.com">sales@razorwirebd.com</a><br>
+                    Skype: <a href="skype:metronic">Ferdous</a>
                 </address>
             </div>
             <!-- END BOTTOM CONTACTS -->
@@ -289,7 +287,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
         <div class="row">
             <!-- BEGIN COPYRIGHT -->
             <div class="col-md-6 col-sm-6 padding-top-10">
-                2014 © Metronic Shop UI. ALL Rights Reserved.
+                2016 © Razor-WireBd. ALL Rights Reserved.
             </div>
             <!-- END COPYRIGHT -->
             <!-- BEGIN PAYMENTS -->
