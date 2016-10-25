@@ -175,106 +175,23 @@
                 <div class="col-md-12 sale-product">
                     <h2>New Arrivals</h2>
                     <div class="owl-carousel owl-carousel5">
-                        <div>
-                            <div class="product-item">
-                                <div class="pi-img-wrapper">
-                                    <img src="assets/frontend/pages/img/products/p1.jpg" class="img-responsive" alt="Berry Lace Dress">
-                                    <div>
-                                        <a href="assets/frontend/pages/img/products/p1.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                        @foreach($newArrivals as $new )
+                            <div>
+                                <div class="product-item">
+                                    <div class="pi-img-wrapper">
+                                        <img src="assets/frontend/pages/img/products/p1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                                        <div>
+                                            <a href="assets/frontend/pages/img/products/p1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                                            <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                                        </div>
                                     </div>
+                                    <h3><a href="shop-item.html">{{ $new->name }}</a></h3>
+                                    <div class="pi-price">${{ $new->price }}</div>
+                                  {{--  <a href="#" class="btn btn-default add2cart">Add to cart</a>--}}
+                                    <div class="sticker sticker-sale"></div>
                                 </div>
-                                <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                                <div class="pi-price">$29.00</div>
-                                <a href="#" class="btn btn-default add2cart">Add to cart</a>
-                                <div class="sticker sticker-sale"></div>
                             </div>
-                        </div>
-                        <div>
-                            <div class="product-item">
-                                <div class="pi-img-wrapper">
-                                    <img src="assets/frontend/pages/img/products/p2.jpg" class="img-responsive" alt="Berry Lace Dress">
-                                    <div>
-                                        <a href="assets/frontend/pages/img/products/p2.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                                    </div>
-                                </div>
-                                <h3><a href="shop-item.html">Berry Lace Dress2</a></h3>
-                                <div class="pi-price">$29.00</div>
-                                <a href="#" class="btn btn-default add2cart">Add to cart</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="product-item">
-                                <div class="pi-img-wrapper">
-                                    <img src="assets/frontend/pages/img/products/p3.png" class="img-responsive" alt="Berry Lace Dress">
-                                    <div>
-                                        <a href="assets/frontend/pages/img/products/p3.png" class="btn btn-default fancybox-button">Zoom</a>
-                                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                                    </div>
-                                </div>
-                                <h3><a href="shop-item.html">Berry Lace Dress2</a></h3>
-                                <div class="pi-price">$29.00</div>
-                                <a href="#" class="btn btn-default add2cart">Add to cart</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="product-item">
-                                <div class="pi-img-wrapper">
-                                    <img src="assets/frontend/pages/img/products/p4.jpg" class="img-responsive" alt="Berry Lace Dress">
-                                    <div>
-                                        <a href="assets/frontend/pages/img/products/p4.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                                    </div>
-                                </div>
-                                <h3><a href="#">Berry Lace Dress4</a></h3>
-                                <div class="pi-price">$29.00</div>
-                                <a href="#" class="btn btn-default add2cart">Add to cart</a>
-                                <div class="sticker sticker-new"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="product-item">
-                                <div class="pi-img-wrapper">
-                                    <img src="assets/frontend/pages/img/products/p5.jpg" class="img-responsive" alt="Berry Lace Dress">
-                                    <div>
-                                        <a href="assets/frontend/pages/img/products/p5.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                                    </div>
-                                </div>
-                                <h3><a href="shop-item.html">Berry Lace Dress5</a></h3>
-                                <div class="pi-price">$29.00</div>
-                                <a href="#" class="btn btn-default add2cart">Add to cart</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="product-item">
-                                <div class="pi-img-wrapper">
-                                    <img src="assets/frontend/pages/img/products/p7.jpg" class="img-responsive" alt="Berry Lace Dress">
-                                    <div>
-                                        <a href="assets/frontend/pages/img/products/p7.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                                    </div>
-                                </div>
-                                <h3><a href="shop-item.html">Berry Lace Dress3</a></h3>
-                                <div class="pi-price">$29.00</div>
-                                <a href="#" class="btn btn-default add2cart">Add to cart</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="product-item">
-                                <div class="pi-img-wrapper">
-                                    <img src="assets/frontend/pages/img/products/p8.JPG" class="img-responsive" alt="Berry Lace Dress">
-                                    <div>
-                                        <a href="assets/frontend/pages/img/products/p8.JPG" class="btn btn-default fancybox-button">Zoom</a>
-                                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                                    </div>
-                                </div>
-                                <h3><a href="shop-item.html">Berry Lace Dress3</a></h3>
-                                <div class="pi-price">$29.00</div>
-                                <a href="#" class="btn btn-default add2cart">Add to cart</a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
                 <!-- END SALE PRODUCT -->
