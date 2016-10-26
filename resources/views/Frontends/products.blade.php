@@ -248,9 +248,9 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="product-item">
                             <div class="pi-img-wrapper">
-                                <img src="../../assets/frontend/pages/img/products/model1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                                <img src="images/{{$new->image}}" class="img-responsive" alt="{{$new->image}}">
                                 <div>
-                                    <a href="../../assets/frontend/pages/img/products/model1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                                    <a href="images/{{$new->image}}" class="btn btn-default fancybox-button">Zoom</a>
                                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                                 </div>
                             </div>

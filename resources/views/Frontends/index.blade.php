@@ -176,13 +176,12 @@
                     <h2>New Arrivals</h2>
                     <div class="owl-carousel owl-carousel5">
                         @foreach($newArrivals as $new )
-                            {{$new->image}}
                             <div>
                                 <div class="product-item">
                                     <div class="pi-img-wrapper">
-                                        <img src="images/17.jpg" class="img-responsive" alt="Berry Lace Dress">
+                                        <img src="images/{{$new->image}}" class="img-responsive" alt="{{$new->image}}">
                                         <div>
-                                            <a href="assets/frontend/pages/img/products/p1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                                            <a href="images/{{$new->image}}" class="btn btn-default fancybox-button">Zoom</a>
                                             <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                                         </div>
                                     </div>

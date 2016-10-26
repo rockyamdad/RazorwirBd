@@ -119,7 +119,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                         Home
                     </a>
                 </li>
-                <li><a href="#">Products</a></li>
+                <li><a href="{{ URL::to('all-products') }}">Products</a></li>
                 <li class="dropdown dropdown100 nav-catalogue">
                     <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
                         New
@@ -189,14 +189,14 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
     <div class="container">
         <div class="owl-carousel owl-carousel6-brands">
             <a href="#"><img src="assets/frontend/pages/img/brands/aiub.JPG" style="width: 90px;height: 90px;" alt="esprit" title="AIUB"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/AMAN-Group-1.png" style="width: 90px;height: 90px;" alt="esprit" title="Aman Group"></a>
             <a href="#"><img src="assets/frontend/pages/img/brands/army.png" style="width: 90px;height: 90px;" alt="gap" title="bangladesh Army"></a>
-            <a href="#"><img src="assets/frontend/pages/img/brands/gulsan_club.png" style="width: 90px;height: 90px;" alt="next" title="Gulsan Club"></a>
             <a href="#"><img src="assets/frontend/pages/img/brands/logo15.png" style="width: 90px;height: 90px;" alt="puma" title="STS Group"></a>
             <a href="#"><img src="assets/frontend/pages/img/brands/turky.jpg" style="width: 90px;height: 90px;" alt="zara" title="Turky Embassy"></a>
             <a href="#"><img src="assets/frontend/pages/img/brands/us-embassy.jpg" style="width: 90px;height: 90px;" alt="canon" title="US-Embassy"></a>
             <a href="#"><img src="assets/frontend/pages/img/brands/bcb.png" style="width: 90px;height: 90px;" alt="esprit" title="BCB"></a>
             <a href="#"><img src="assets/frontend/pages/img/brands/meghna.png" style="width: 90px;height: 90px;" alt="gap" title="Meghna Group"></a>
+            <a href="#"><img src="assets/frontend/pages/img/brands/AMAN-Group-1.png" style="width: 90px;height: 90px;" alt="esprit" title="Aman Group"></a>
+            <a href="#"><img src="assets/frontend/pages/img/brands/gulsan_club.png" style="width: 90px;height: 90px;" alt="next" title="Gulsan Club"></a>
         </div>
     </div>
 </div>
