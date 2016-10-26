@@ -24,19 +24,25 @@ class ProductController extends Controller {
 	public function store(Request $request){
 
 		$product = new Product();
-		$data = Input::all();
-
-		$product->create($data);
+		$file = $request->file('image')->getClientOriginalName();
+		$product->image = $file;
+		$product->name = $request->get('name');
+		$product->color = $request->get('color');
+		$product->size = $request->get('size');
+		$product->price = $request->get('price');
+		$product->type = $request->get('type');
+		$product->details = $request->get('details');
+		$product->brand = $request->get('brand');
+		$product->origin_name = $request->get('origin_name');
 		$product->save();
 
-		$imageName = $product->id . '.' .
-			$request->file('image')->getClientOriginalExtension();
+		$imageName = $request->file('image')->getClientOriginalName();
 		$request->file('image')->move(
 			base_path() . '/public/images/', $imageName
 		);
 		Session::flash('message', 'Product has been Successfully Created.');
 
-		return Redirect::to('dashboard');
+		return Redirect::to('list');
 	}
 	public function products(){
 		$products = Product::paginate(10);

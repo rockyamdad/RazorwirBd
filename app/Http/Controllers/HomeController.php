@@ -6,7 +6,8 @@ class HomeController extends Controller {
 
 	public function index()
 	{
-		return view('Frontends.index');
+		$newArrivals = Product::orderBy('id','desc')->take(7)->get();
+		return view('Frontends.index',compact('newArrivals'));
 	}
 	public function aboutUs()
 	{
