@@ -19,6 +19,12 @@ class HomeController extends Controller {
 		$newArrivals = Product::orderBy('id','desc')->take(7)->get();
 		return view('Frontends.index',compact('newArrivals'));
 	}
+	public function productView($id){
+
+		$product = Product::find($id);
+
+		return view('Frontends.productView',compact('product'));
+	}
 
 	public function products(){
 

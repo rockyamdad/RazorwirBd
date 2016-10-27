@@ -7,6 +7,7 @@ Route::get('/', 'HomeController@index');
 Route::get('about-us', 'HomeController@aboutUs');
 Route::get('new-arrival', 'HomeController@newArrival');
 Route::get('all-products', 'HomeController@products');
+Route::get('product-view/{id}', 'HomeController@productView');
 
 Route::get('dashboard', 'ProductController@index');
 Route::get('add', 'ProductController@add');

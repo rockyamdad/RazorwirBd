@@ -182,7 +182,8 @@
                                         <img src="images/{{$new->image}}" class="img-responsive" alt="{{$new->image}}">
                                         <div>
                                             <a href="images/{{$new->image}}" class="btn btn-default fancybox-button">Zoom</a>
-                                            <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                                          {{--  <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>--}}
+                                            <a href="{{ URL::to('product-view/'.$new->id)}}" class="btn btn-default fancybox fancybox.ajax" id="event" data-fancybox-type="ajax">View</a>
                                         </div>
                                     </div>
                                     <h3><a href="shop-item.html">{{ $new->name }}</a></h3>
@@ -201,4 +202,21 @@
 
         </div>
     </div>
+@stop
+@section('javascript')
+    <script type="text/javascript">
+        $(".open_ajax").fancybox({type: 'ajax'});
+        $(".fancybox").fancybox({
+            maxWidth:850,
+            afterShow: function() {
+                Layout.initImageZoom();
+                Layout.initTouchspin();
+
+
+            }
+
+        });
+
+    </script>
+
 @stop
