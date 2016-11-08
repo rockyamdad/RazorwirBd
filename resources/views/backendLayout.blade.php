@@ -60,8 +60,8 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
     <div class="page-header-inner">
         <!-- BEGIN LOGO -->
         <div class="page-logo">
-            <a href="index.html">
-                <img src="../../assets/admin/layout/img/logo.png" alt="logo" class="logo-default"/>
+            <a href="{{URL::to('/')}}">
+             <h3>RazorWireBd</h3>
             </a>
             <div class="menu-toggler sidebar-toggler hide">
                 <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -78,16 +78,16 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
                 <li class="dropdown dropdown-user">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                        <img alt="" class="img-circle" src="../../assets/admin/layout/img/avatar3_small.jpg"/>
+                        <img alt="" class="img-circle" src="../../assets/admin/layout/img/king.jpg"/>
 					<span class="username username-hide-on-mobile">
-					Nick </span>
+					Sabbir </span>
                         <i class="fa fa-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-default">
-                        <li>
+                   {{--     <li>
                             <a href="#">
                                 <i class="icon-user"></i> My Profile </a>
-                        </li>
+                        </li>--}}
 
                         <li>
                             <a href="{{ URL::to('logout/') }}">

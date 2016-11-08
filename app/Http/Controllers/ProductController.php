@@ -75,4 +75,12 @@ class ProductController extends Controller {
 		return Redirect::to('list/');
 	}
 
+	public function getDelete($id)
+	{
+		$product = Product::find($id);
+		$product->delete();
+		Session::flash('message', 'Product has been Successfully Deleted.');
+		return Redirect::to('list');
+	}
+
 }

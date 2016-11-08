@@ -55,7 +55,7 @@
                         <th >Size</th>
                         <th >Price</th>
                         <th >Description</th>
-                        <th width="120px">Action</th>
+                        <th width="200px">Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -75,7 +75,9 @@
                         <td>{{$product->details}}</td>
                         <td>
                             <a class="btn blue btn-sm" href="{{ URL::to('edit/'. $product->id ) }}"><i class="fa fa-edit"></i>Edit </a>
-
+                            <a class="btn red btn-sm" href="{{ URL::to('products/delete/'.$product->id)}}"
+                               onclick="return confirm('Are you sure you want to delete this item?');"><i
+                                        class="fa fa-trash-o"></i> Delete</a>
                         </td>
                     </tr>
                     <?php

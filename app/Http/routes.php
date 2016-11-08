@@ -13,6 +13,7 @@ Route::get('product-view/{id}', 'HomeController@productView');
 Route::get('dashboard', 'ProductController@index');
 Route::get('add', 'ProductController@add');
 Route::get('list', 'ProductController@products');
+Route::get('products/delete/{id}', 'ProductController@getDelete');
 Route::post('product-save', 'ProductController@store');
 Route::get('edit/{id}', 'ProductController@edit');
 Route::post('edit/{id}', 'ProductController@postUpdate');
