@@ -7,22 +7,17 @@
 
         </div>
         <div class="col-md-6 col-sm-6 col-xs-9">
-            <h3>{{ $product->name }}</h3>
+            <h3 style="color:darkred">{{ $product->name }}</h3>
 
             <div class="price-availability-block clearfix">
                 <div class="price">
-                    <div class="product-page-options">
-                        <div class="pull-left">
-                            <label class="control-label">Tickets:</label>
-                        </div>
-                    </div>
                     <div class="address">
-                        <p>Brand: {{ $product->brand }}.</p>
-                        <p>Origin Name: {{ $product->origin_name }}</p>
-                        <p>Color: {{ $product->color }}</p>
-                        <p>Type: {{ $product->type }}</p>
-                        <p>Size: {{ $product->size }}</p>
-                        <p>Price: ${{ $product->price }}</p>
+                        <p><B style="color: #003bb3">Brand:</B> {{ $product->brand }}.</p>
+                        <p><B style="color: #003bb3">Origin Name:</B> {{ $product->origin_name }}</p>
+                        <p><B style="color: #003bb3">Color:</B> {{ $product->color }}</p>
+                        <p><B style="color: #003bb3">Type:</B> {{ $product->type }}</p>
+                        <p><B style="color: #003bb3">Size:</B> {{ $product->size }}</p>
+                        <p><B style="color: #003bb3">Price:</B> ${{ $product->price }}</p>
                     </div>
                 </div>
             </div>
@@ -30,11 +25,7 @@
             <div class="description">
                 <p>{{ $product->details }}</p>
             </div>
-            <div class="product-page-cart">
 
-                <a href="#" class="btn btn-default color-custom">More
-                    details</a>
-            </div>
         </div>
         <div class="sticker sticker-sale"></div>
     </div>

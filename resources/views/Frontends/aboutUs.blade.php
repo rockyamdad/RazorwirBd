@@ -1,4 +1,7 @@
 @extends('baseLayout')
+@section('styles')
+    <link href="{{ URL::asset('assets/frontend/onepage/css/style.css') }}" rel="stylesheet" type="text/css" id="style_color"/>
+@endsection
 @section('content')
     <div class="choose-us-block content text-center margin-bottom-40" id="benefits">
         <div class="container">

@@ -5,6 +5,7 @@ Route::get('logout', 'AuthController@getLogout');
 
 Route::get('/', 'HomeController@index');
 Route::get('about-us', 'HomeController@aboutUs');
+Route::get('contact-us', 'HomeController@contactUs');
 Route::get('new-arrival', 'HomeController@newArrival');
 Route::get('all-products', 'HomeController@products');
 Route::get('product-view/{id}', 'HomeController@productView');

@@ -14,6 +14,11 @@ class HomeController extends Controller {
 		return view('Frontends.aboutUs');
 
 	}
+	public function contactUs()
+	{
+		return view('Frontends.contactUs');
+
+	}
 	public function newArrival(){
 
 		$newArrivals = Product::orderBy('id','desc')->take(7)->get();
