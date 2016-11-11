@@ -33,7 +33,7 @@ class HomeController extends Controller {
 
 	public function products(){
 
-		$products = Product::orderBy('id','desc')->get();
+		$products = Product::orderBy('id', 'desc')->paginate(6);
 		return view('Frontends.products',compact('products'));
 	}
 }

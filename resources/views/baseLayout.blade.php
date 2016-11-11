@@ -205,8 +205,8 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
             <!-- BEGIN BOTTOM ABOUT BLOCK -->
             <div class="col-md-3 col-sm-6 pre-footer-col" style="margin-left: 50px;">
                 <h2>About us</h2>
-                <p>As the first ever manufacturer of barbed wires, first ever importer of Razor Concertina and PVC barbed wire in Bangladesh </p>
-                <p>, Sharif Enterprise has been fulfilling the needs of people since 1980. </p>
+                <p>As the first ever manufacturer of barbed wires, first ever importer of Razor Concertina and PVC barbed wire in Bangladesh. </p>
+                <p> Sharif Enterprise has been fulfilling the needs of people since 1980. </p>
             </div>
             <!-- END BOTTOM ABOUT BLOCK -->
             <!-- BEGIN BOTTOM INFO BLOCK -->

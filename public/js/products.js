@@ -18,7 +18,7 @@
             origin_name: {
                 required: true
             },
-            price:{
+            details:{
                 required:true
             }
         },

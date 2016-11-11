@@ -55,7 +55,8 @@
                         <th >Size</th>
                         <th >Price</th>
                         <th >Description</th>
-                        <th width="200px">Action</th>
+                        <th >Image</th>
+                        <th width="160px">Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -73,6 +74,7 @@
                         <td>{{$product->size}}</td>
                         <td>{{$product->price}}</td>
                         <td>{{$product->details}}</td>
+                        <td>  <img src="images/{{$product->image}}" class="img-responsive" alt="{{$product->image}}" style="width: 50px;height:30px"></td>
                         <td>
                             <a class="btn blue btn-sm" href="{{ URL::to('edit/'. $product->id ) }}"><i class="fa fa-edit"></i>Edit </a>
                             <a class="btn red btn-sm" href="{{ URL::to('products/delete/'.$product->id)}}"

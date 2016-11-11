@@ -152,7 +152,7 @@
                             <div>
                                 <div class="product-item">
                                     <div class="pi-img-wrapper">
-                                        <img src="images/{{$new->image}}" class="img-responsive" alt="{{$new->image}}">
+                                        <img src="images/{{$new->image}}" style="height: 182px;width: 230px" class="img-responsive" alt="{{$new->image}}">
                                         <div>
                                             <a href="images/{{$new->image}}" class="btn btn-default fancybox-button">Zoom</a>
                                           {{--  <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>--}}

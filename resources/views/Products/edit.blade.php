@@ -31,12 +31,20 @@
         </div>
         <div class="portlet-body form">
             <!-- BEGIN FORM-->
-            {!!Form::model($product,array('action' => array('ProductController@postUpdate', $product->id), 'method' => 'POST', 'class'=>'form-horizontal', 'id'=>'branch_form'))!!}
+            {!!Form::model($product,array('action' => array('ProductController@postUpdate', $product->id), 'method' => 'POST', 'class'=>'form-horizontal', 'id'=>'branch_form','files' => true))!!}
 
             <div class="form-body">
                 <div class="alert alert-danger display-hide">
                     <button data-close="alert" class="close"></button>
                     You have some form errors. Please check below.
+                </div>
+                <div style="float: left;width: 80%; margin-left: 20px">
+                    @if (Session::has('message'))
+                        <div class="alert alert-danger">
+                            <button data-close="alert" class="close"></button>
+                            {{ Session::get('message') }}
+                        </div>
+                    @endif
                 </div>
                 <div class="alert alert-success display-hide">
                     <button data-close="alert" class="close"></button>
@@ -93,7 +101,7 @@
                 </div>
 
                 <div class="form-group">
-                    {!!HTML::decode(Form::label('details','Description',array('class' => 'control-label col-md-3')))!!}
+                    {!!HTML::decode(Form::label('details','Description<span class="required">*</span>',array('class' => 'control-label col-md-3')))!!}
                     <div class="col-md-4">
                         {!!Form::textarea('details',null,array('class' => 'form-control','id' => 'description', 'rows'=>'3'))!!}
                     </div>
@@ -102,8 +110,10 @@
                     {!!HTML::decode(Form::label('image','Product Image',array('class' => 'control-label col-md-3')))!!}
                     <div class="col-md-4">
                         {!!Form::file('image', null) !!}
-                    </div>
+                        {{$product->image}}
+                        </div>
                 </div>
+
 
 
                 <div class="form-actions fluid">

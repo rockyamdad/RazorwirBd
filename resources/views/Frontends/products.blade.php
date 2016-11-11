@@ -171,7 +171,7 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="product-item">
                             <div class="pi-img-wrapper">
-                                <img src="images/{{$new->image}}" class="img-responsive" alt="{{$new->image}}">
+                                <img src="images/{{$new->image}}" style="height: 182px;width: 230px" class="img-responsive" alt="{{$new->image}}">
                                 <div>
                                     <a href="images/{{$new->image}}" class="btn btn-default fancybox-button">Zoom</a>
                                     {{--  <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>--}}
@@ -187,19 +187,13 @@
                     <!-- PRODUCT ITEM END -->
 
                 </div>
+
                 <!-- END PRODUCT LIST -->
                 <!-- BEGIN PAGINATOR -->
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 items-info">Items 1 to 9 of 10 total</div>
                     <div class="col-md-8 col-sm-8">
                         <ul class="pagination pull-right">
-                            <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><span>2</span></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
+                            {!! $products->render() !!}
                         </ul>
                     </div>
                 </div>
