@@ -17,7 +17,7 @@
                         <p><B style="color: #003bb3">Color:</B> {{ $product->color }}</p>
                         <p><B style="color: #003bb3">Type:</B> {{ $product->type }}</p>
                         <p><B style="color: #003bb3">Size:</B> {{ $product->size }}</p>
-                        <p><B style="color: #003bb3">Price:</B> ${{ $product->price }}</p>
+                        <p><B style="color: #003bb3">Price:</B> Tk{{ $product->price }}</p>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,6 @@
             </div>
 
         </div>
-        <div class="sticker sticker-sale"></div>
     </div>
 </div>
 

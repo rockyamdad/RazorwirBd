@@ -179,7 +179,7 @@
                                 </div>
                             </div>
                             <h3><a href="shop-item.html">{{ $new->name }}</a></h3>
-                            <div class="pi-price">${{ $new->price }}</div>
+                            <div class="pi-price">Tk{{ $new->price }}</div>
                               {{--<a href="#" class="btn btn-default add2cart">Add to cart</a>--}}
                         </div>
                     </div>

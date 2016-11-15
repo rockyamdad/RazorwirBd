@@ -22,13 +22,22 @@ class ProductController extends Controller {
 		return view('Products.add');
 	}
 	public function store(Request $request){
-		if (file_exists(public_path('images/'.$request->file('image')->getClientOriginalName()))) {
-			Session::flash('message', 'Same File name already exists.');
-			return redirect()->back();
-		}
+
 		$product = new Product();
-		$file = $request->file('image')->getClientOriginalName();
-		$product->image = $file;
+		if($request->hasFile('image')) {
+
+			if (file_exists(public_path('images/'.$request->file('image')->getClientOriginalName()))) {
+				Session::flash('message', 'Same File name already exists.');
+				return redirect()->back();
+			}
+			$file = $request->file('image')->getClientOriginalName();
+			$product->image = $file;
+			$imageName = $request->file('image')->getClientOriginalName();
+			$request->file('image')->move(
+				base_path() . '/public/images/', $imageName
+			);
+		}
+
 		$product->name = $request->get('name');
 		$product->color = $request->get('color');
 		$product->size = $request->get('size');
@@ -39,10 +48,7 @@ class ProductController extends Controller {
 		$product->origin_name = $request->get('origin_name');
 		$product->save();
 
-		$imageName = $request->file('image')->getClientOriginalName();
-		$request->file('image')->move(
-			base_path() . '/public/images/', $imageName
-		);
+
 		Session::flash('message', 'Product has been Successfully Created.');
 
 		return Redirect::to('list');
@@ -63,10 +69,7 @@ class ProductController extends Controller {
 			'brand' => 'required',
 			'origin_name' => 'required',
 		);
-		if (file_exists(public_path('images/'.$request->file('image')->getClientOriginalName()))) {
-			Session::flash('message', 'Same File name already exists.');
-			return redirect()->back();
-		}
+
 
 		$product = Product::find($id);
 
@@ -80,6 +83,11 @@ class ProductController extends Controller {
 		$product->origin_name = $request->get('origin_name');
 
 		if($request->hasFile('image')) {
+			if (file_exists(public_path('/images/'.$request->file('image')->getClientOriginalName()))) {
+				Session::flash('message', 'Same File name already exists.');
+				return redirect()->back();
+			}
+
 			$file = $request->file('image')->getClientOriginalName();
 			$product->image = $file;
 
