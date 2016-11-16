@@ -43,7 +43,7 @@
 
             <img src="assets/frontend/pages/img/layerslider/slide2/two.jpg" class="ls-bg" alt="Slide background">
 
-            <div class="ls-l ls-title" style="top: 40%; left: 21%; white-space: nowrap;" data-ls="
+            <div class="ls-l ls-title" style="top: 40%; left: 25%; white-space: nowrap;" data-ls="
           fade: true;
           fadeout: true;
           durationin: 750; durationout: 109750;

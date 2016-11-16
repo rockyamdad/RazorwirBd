@@ -33,7 +33,7 @@
 <body class="login">
 <!-- BEGIN LOGO -->
 <div class="logo">
-    <img src="{{URL::asset('assets/frontend/layout/img/logos/test.png')}}" alt="" width="200px;" height="60px"/>
+    <img src="{{URL::asset('assets/frontend/layout/img/logos/logo.jpg')}}" alt="" width="100px;" height="90px"/>
 </div>
 
 <div class="content">
@@ -41,7 +41,7 @@
 </div>
 
 <div class="copyright">
-    2013 &copy; Cemco Dashboard Template.
+    2016 © RazorWire BD. All Rights Reserved.
 </div>
 
 <script src="{{URL::asset('assets/global/plugins/jquery.min.js')}}" type="text/javascript"></script>

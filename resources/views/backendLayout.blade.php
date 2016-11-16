@@ -196,7 +196,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
     <div class="page-footer-inner">
-        2016 &copy; razorwirbd.com.
+        2016 © RazorWire BD. All Rights Reserved.
     </div>
     <div class="scroll-to-top">
         <i class="icon-arrow-up"></i>

@@ -12,8 +12,8 @@
             <div class="price-availability-block clearfix">
                 <div class="price">
                     <div class="address">
-                        <p><B style="color: #003bb3">Brand:</B> {{ $product->brand }}.</p>
-                        <p><B style="color: #003bb3">Origin Name:</B> {{ $product->origin_name }}</p>
+                        <h5 style="color: #003bb3">Brand:</h5> <B>{{ $product->brand }}</B><br>
+                        <B style="color: #003bb3">Origin Name:</B> {{ $product->origin_name }}
                         <p><B style="color: #003bb3">Color:</B> {{ $product->color }}</p>
                         <p><B style="color: #003bb3">Type:</B> {{ $product->type }}</p>
                         <p><B style="color: #003bb3">Size:</B> {{ $product->size }}</p>

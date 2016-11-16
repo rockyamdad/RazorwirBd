@@ -62,18 +62,10 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                     <ul class="list-unstyled list-inline">
                         <li><i class="fa fa-phone"></i><span>+880 1711524335</span></li>
                         <!-- BEGIN CURRENCIES -->
-                        <li class="shop-currencies">
-                            <a href="javascript:void(0);">€</a>
-                            <a href="javascript:void(0);">£</a>
-                            <a href="javascript:void(0);" class="current">$</a>
-                        </li>
+
                         <!-- END CURRENCIES -->
                         <!-- BEGIN LANGS -->
-                        <li class="langs-block">
-                            <a href="javascript:void(0);" class="current">English </a>
-                            <div class="langs-block-others-wrapper"><div class="langs-block-others">
-                                </div></div>
-                        </li>
+
                         <!-- END LANGS -->
                     </ul>
                 </div>
@@ -81,7 +73,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                 <!-- BEGIN TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
-                        <h4 style="color:darkmagenta">Razor-Wire Bd</h3>
+                        <h4 style="color:darkmagenta">Razor Wire Bd</h3>
                     </ul>
                 </div>
                 <!-- END TOP BAR MENU -->
@@ -92,7 +84,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <!-- BEGIN HEADER -->
 <div class="header">
     <div class="container">
-        <a class="site-logo" href="{{ URL::to('/') }}"><img src="assets/frontend/layout/img/logos/test.png" style="width: 118px;height:38px;" alt="Metronic Shop UI"></a>
+        <a class="site-logo" href="{{ URL::to('/') }}"><img src="assets/frontend/layout/img/logos/logo.jpg" style="width: 70px;height:40px;" alt="Metronic Shop UI"></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
@@ -218,7 +210,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
             <!-- BEGIN BOTTOM CONTACTS -->
             <div class="col-md-3 col-sm-6 pre-footer-col" style="margin-left:400px;">
-                <h2>Our Contacts</h2>
+                <h2>Our Contact</h2>
                 <address class="margin-bottom-40">
                     Ferdous Hossain<br>
                     M/S Sharif Enterprise<br>
@@ -273,7 +265,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
         <div class="row">
             <!-- BEGIN COPYRIGHT -->
             <div class="col-md-6 col-sm-6 padding-top-10">
-                2016 © Razor-WireBd. ALL Rights Reserved.
+                2016 © RazorWire BD. All Rights Reserved.
             </div>
             <!-- END COPYRIGHT -->
             <!-- BEGIN PAYMENTS -->

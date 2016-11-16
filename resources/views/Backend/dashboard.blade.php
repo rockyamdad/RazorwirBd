@@ -24,5 +24,5 @@
 
 
     </div>
-    <h1>Welcome RazorWir Bd</h1>
+    <h1>Welcome Razor Wire BD</h1>
 @stop
